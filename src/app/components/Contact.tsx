@@ -63,13 +63,18 @@ export function Contact() {
 
             <div className="p-6 rounded-2xl bg-white border border-gray-200 shadow-lg">
               <h3 className="mb-4 text-gray-800 text-xl">Mapa</h3>
-              <div className="w-full h-64 rounded-xl bg-gradient-to-br from-purple-100 to-cyan-100 border border-gray-300 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                  <p className="text-gray-600 text-sm">Universidad de los Andes</p>
-                  <p className="text-gray-500 text-xs">Bogotá, Colombia</p>
-                </div>
-              </div>
+
+              <div className="rounded-2xl overflow-hidden border border-gray-200 bg-gradient-to-br from-purple-100 to-cyan-100 border border-gray-300 flex items-center justify-center">
+            <iframe
+              src="https://www.google.com/maps?q=4.6014581,-74.0661334&z=15&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              className="w-full h-[450px]"
+            />
+          </div>
             </div>
           </motion.div>
 
